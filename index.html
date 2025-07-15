@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MotoGP Standings & Contact</title>
+  <link rel="stylesheet" href="motogp.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MotoGP</div>
+    <nav>
+      <ul>
+        <li><a href="#standings">Standings</a></li>
+        <li><a href="#riders">Riders</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- Parallax Background -->
+  <div class="parallax-bg"></div>
+
+  <main>
+
+    <!-- Standings Section -->
+    <section id="standings" class="visible">
+      <h2>2025 Riders Standings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Rider</th>
+            <th>Team</th>
+            <th>Points</th>
+            <th>Wins</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="https://flagcdn.com/w20/es.png" alt="Spain" class="flag" /> Marc Márquez</td>
+            <td>Honda</td>
+            <td>220</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="https://flagcdn.com/w20/it.png" alt="Italy" class="flag" /> Francesco Bagnaia</td>
+            <td>Ducati</td>
+            <td>197</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="https://flagcdn.com/w20/fr.png" alt="France" class="flag" /> Fabio Quartararo</td>
+            <td>Yamaha</td>
+            <td>165</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><img src="https://flagcdn.com/w20/es.png" alt="Spain" class="flag" /> Joan Mir</td>
+            <td>Suzuki</td>
+            <td>140</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><img src="https://flagcdn.com/w20/es.png" alt="Spain" class="flag" /> Alex Rins</td>
+            <td>Suzuki</td>
+            <td>130</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Riders Section -->
+    <section id="riders">
+      <h2>Top Riders</h2>
+      <div class="riders-grid">
+        <div class="rider-card">
+          <img src="img/1.png" alt="Marc Márquez" />
+          <h3>Marc Márquez</h3>
+        </div>
+        <div class="rider-card">
+          <img src="img/2.png" alt="Francesco Bagnaia" />
+          <h3>Francesco Bagnaia</h3>
+        </div>
+        <div class="rider-card">
+          <img src="img/3.png" alt="Fabio Quartararo" />
+          <h3>Fabio Quartararo</h3>
+        </div>
+        <div class="rider-card">
+          <img src="img/4.png" alt="Joan Mir" />
+          <h3>Joan Mir</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+      <h2>Latest News</h2>
+      <div class="news-carousel">
+        <div class="news-carousel-inner">
+          <div class="news-item">
+            <img src="img/11.png" alt="Race 1" />
+            <div>Quartararo wins an epic battle at Catalunya GP!</div>
+          </div>
+          <div class="news-item">
+            <img src="img/12.png" alt="Race 2" />
+            <div>Bagnaia claims pole position in Assen qualifying.</div>
+          </div>
+          <div class="news-item">
+            <img src="img/13.png" alt="Race 3" />
+            <div>Marc Márquez returns strong after injury break.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+
+        <button type="submit" class="btn-led">Send Message</button>
+        <p id="form-message" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="motogp.js"></script>
+</body>
+</html>
